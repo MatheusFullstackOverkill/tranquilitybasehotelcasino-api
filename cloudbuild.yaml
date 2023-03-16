@@ -50,7 +50,8 @@ images:
 #   _TRIGGER_ID: 5efbbaa5-95e0-4337-84d3-072f98e0cc99
 #   _GCR_HOSTNAME: us.gcr.io
 #   _PLATFORM: managed
-# tags:
-#   - gcp-cloud-build-deploy-cloud-run
-#   - gcp-cloud-build-deploy-cloud-run-managed
-#   - tranquilitybasehotelcasino
+# Usado para filtrar a criação do build por tags, na sessão 'Histórico' do Cloud Build
+tags:
+  - gcp-cloud-build-deploy-cloud-run
+  - gcp-cloud-build-deploy-cloud-run-managed
+  - tranquilitybasehotelcasino
