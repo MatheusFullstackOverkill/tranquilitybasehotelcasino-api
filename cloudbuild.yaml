@@ -15,6 +15,7 @@ steps:
       - '-f'
       - Dockerfile
     id: Build
+    # Armazena a iamgem no Artifact Registry:
   - name: gcr.io/cloud-builders/docker
     args:
       - push
@@ -35,8 +36,9 @@ steps:
       - '--cpu'
       - '4'
     id: Deploy
-# images:
-#   - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA'
+# Armazena as imagens no Container Registry:
+images:
+  - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA'
 # options:
 #   substitutionOption: ALLOW_LOOSE
 # substitutions:
