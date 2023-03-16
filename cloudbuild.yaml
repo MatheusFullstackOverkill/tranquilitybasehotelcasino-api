@@ -35,18 +35,18 @@ steps:
       - '--cpu'
       - '4'
     id: Deploy
-images:
-  - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA'
-options:
-  substitutionOption: ALLOW_LOOSE
-substitutions:
-  _SERVICE_NAME: tranquilitybasehotelcasino
-  _DEPLOY_REGION: us-central1
-  _LABELS: gcb-trigger-id=5efbbaa5-95e0-4337-84d3-072f98e0cc99
-  _TRIGGER_ID: 5efbbaa5-95e0-4337-84d3-072f98e0cc99
-  _GCR_HOSTNAME: us.gcr.io
-  _PLATFORM: managed
-tags:
-  - gcp-cloud-build-deploy-cloud-run
-  - gcp-cloud-build-deploy-cloud-run-managed
-  - tranquilitybasehotelcasino
+# images:
+#   - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA'
+# options:
+#   substitutionOption: ALLOW_LOOSE
+# substitutions:
+#   _SERVICE_NAME: tranquilitybasehotelcasino
+#   _DEPLOY_REGION: us-central1
+#   _LABELS: gcb-trigger-id=5efbbaa5-95e0-4337-84d3-072f98e0cc99
+#   _TRIGGER_ID: 5efbbaa5-95e0-4337-84d3-072f98e0cc99
+#   _GCR_HOSTNAME: us.gcr.io
+#   _PLATFORM: managed
+# tags:
+#   - gcp-cloud-build-deploy-cloud-run
+#   - gcp-cloud-build-deploy-cloud-run-managed
+#   - tranquilitybasehotelcasino
