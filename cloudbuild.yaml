@@ -3,7 +3,7 @@ steps:
     args:
       - 'cp'
       - 'gs://hotel_static_files/hotel.png'
-      - .
+      - '/workspace'
     id: Copy required files
   - name: gcr.io/cloud-builders/docker
     args:
