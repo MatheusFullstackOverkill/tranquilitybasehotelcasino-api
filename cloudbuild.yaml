@@ -15,6 +15,12 @@ steps:
       - '-f'
       - Dockerfile
     id: Build
+  - name: gcr.io/cloud-builders/gsutil
+    args:
+      - 'cp'
+      - 'gs://hotel_static_files/hotel.png'
+      - '/workspace'
+    id: Copy required files 2
   - name: gcr.io/cloud-builders/docker
     args:
       - push
