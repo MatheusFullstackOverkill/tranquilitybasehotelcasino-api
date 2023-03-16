@@ -1,4 +1,6 @@
 steps:
+  # O gsutil é usado, entre outras coisas, para copiar arquivos para o container, 
+  # no caso está copiando do bucket 'hotel_static_files' para a pasta workspace do projeto, que no caso é /app
   - name: gcr.io/cloud-builders/gsutil
     args:
       - 'cp'
